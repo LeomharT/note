@@ -1,2 +1,2 @@
-# note
+# note &middot;
 Online note book
