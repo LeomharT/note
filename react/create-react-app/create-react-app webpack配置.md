@@ -1,4 +1,7 @@
-# create-react-app webpack配置
+# create-react-app webpack配置 
+![](https://img.shields.io/badge/webpack-5-blue)
+![](https://img.shields.io/badge/create--react--app-5-ff69b4)
+![](https://img.shields.io/badge/customize--cra-5-yellow)
 
 ## create-react-app的webpack.config.js路径
 

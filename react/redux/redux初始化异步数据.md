@@ -1,0 +1,2 @@
+# Redux初始化异步数据
+如果Redux异步获取数据时在Network里无限发送请求时，验证Saga和Reducer的Action是否重名，如果重名的话会无限调用。
