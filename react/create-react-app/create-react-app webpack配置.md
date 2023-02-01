@@ -1,7 +1,8 @@
-# create-react-app webpack配置 
-![](https://img.shields.io/badge/webpack-5-blue)
-![](https://img.shields.io/badge/create--react--app-5-ff69b4)
-![](https://img.shields.io/badge/customize--cra-5-yellow)
+# create-react-app webpack配置
+
+![webpack](https://img.shields.io/badge/webpack-5-blue)
+![cra](https://img.shields.io/badge/create--react--app-5-ff69b4)
+![customize-cra](https://img.shields.io/badge/customize--cra-5-yellow)
 
 ## create-react-app的webpack.config.js路径
 
@@ -9,9 +10,7 @@
 
 修改上面这个文件等于直接修改cra配置的webpack(不推荐)
 
-
 ----------
-
 
 ## create-react-app使用customize-cra修改webpack配置
 
@@ -31,8 +30,8 @@ module.exports = override(
 
 ----------
 
-
 ## create-react-app配置less
+
 1. 安装less依赖
 `npm i less`
 `npm i less-loader`
@@ -59,23 +58,23 @@ module.exports = override(
 );
 ```
 
-
 ----------
 
-
 ## create-react-app配置.obj或其他没有默认配置的文件
+
 1. 安装url-loader,如果直接在文件里面应用会请求整个spa
 `npm i -D url-loader`
 
 2. 配置webpack(config-overrides.js)
-``` javascript 
+
+``` javascript
 module.exports = override(
     addWebpackModuleRule({
         test: /\.obj$/,
         use: { loader: "url-loader" }
     })
 );
-``` 
+```
 
 3. 此时重启项目可以读取到正确的obj文件,但是ts不认识它,根目录添加module.d.ts文件
 
@@ -95,11 +94,10 @@ declare module '*.obj' {
 }
 ```
 
-
 ----------
 
-
 ## create-react-app 配置打包后资源请求路径publicPath publicURL
+
 1. 配置 config-overrides.js
 
 ``` javascript
@@ -116,6 +114,7 @@ module.export={
 ```
 
 2. public_url public文件夹下资源请求路径修改 package.json
+
 ``` json
 {
   ...
