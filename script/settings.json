@@ -1,0 +1,37 @@
+{
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.format.semicolons": "insert",
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.enable": true,
+    "javascript.format.semicolons": "insert",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    //保存时
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    //括号颜色匹配
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#9966ff",
+        "editorBracketHighlight.foreground2": "#42D4F4",
+        "editorBracketHighlight.foreground3": "#ffff66",
+        "editorBracketHighlight.foreground4": "#3498db",
+        "editorBracketHighlight.foreground5": "#1abc9c",
+    },
+    //注释代码提示
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    }
+}
