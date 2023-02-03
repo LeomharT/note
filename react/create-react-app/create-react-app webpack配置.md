@@ -14,7 +14,7 @@
 
 ## create-react-app使用customize-cra修改webpack配置
 
-``` javascript
+``` JavaScript
 const { override, addDecoratorsLegacy, addWebpackModuleRule } = require('customize-cra');
 
 
@@ -42,7 +42,7 @@ module.exports = override(
 
 `npm i -D customize-cra-less-loader`
 
-``` javascript
+``` JavaScript
 const { override } = require("customize-cra");
 
 const addLessLoader = require("customize-cra-less-loader");
@@ -67,7 +67,7 @@ module.exports = override(
 
 2. 配置webpack(config-overrides.js)
 
-``` javascript
+``` JavaScript
 module.exports = override(
     addWebpackModuleRule({
         test: /\.obj$/,
@@ -78,7 +78,7 @@ module.exports = override(
 
 3. 此时重启项目可以读取到正确的obj文件,但是ts不认识它,根目录添加module.d.ts文件
 
-``` typescript
+``` TypeScript
 declare module '*.obj' {
     const content: string;
     export = content;
@@ -100,7 +100,7 @@ declare module '*.obj' {
 
 1. 配置 config-overrides.js
 
-``` javascript
+``` JavaScript
 const { override } = require("customize-cra");
 module.export={
   webpack:override(
