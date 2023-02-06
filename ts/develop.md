@@ -10,7 +10,7 @@
 
 `npm i -g ts-node`
 
-`nodeemon index.ts`
+`nodemon index.ts`
 
 ------
 
@@ -21,3 +21,21 @@
 `--watch` 就是监听文件变化嘛,然后我就不需要手动restart了
 
 `pm2 start index.ts --watch`
+
+-------
+
+## ts-node无法找到.ts扩展文件
+
+1. 移除`package.json`的`type:"moduel"`
+2. 修改`tsconfig.json`
+
+``` json
+{
+    //...
+    "ts-node": {
+        "files": true,
+        "transpileOnly": true,
+        "esm": true
+    }
+}
+```
