@@ -18,6 +18,7 @@ await esbuild.build({
   bundle: true,
   minify: false,
   watch: true,
+  platform: 'node', // browser | node | neutral  选择打包平台
   assetNames: 'assets/[name]-[hash]',
   sourcemap: true,
   loader: {
