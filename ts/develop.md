@@ -22,7 +22,7 @@
 
 `pm2 start index.ts --watch`
 
--------
+------
 
 ## ts-node无法找到.ts扩展文件
 
