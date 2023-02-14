@@ -122,4 +122,35 @@ module.export={
 }
 ```
 
-3. 对于一些无法打包或者固定的静态资源放进public文件夹打包之后出现在根目录
+对于一些无法打包或者固定的静态资源放进public文件夹打包之后出现在根目录
+
+## create-react-app修改开发时端口号
+
+1. 修改`package.json`npm的star命令
+
+`"start":"set PORT=9000 && react-scripts start"`
+
+如果使用customize-cra👆没用
+
+2. 根目录添加.env文件
+
+``` text
+PORT=9000
+```
+
+## create-react-app不在浏览器控制台输出ESLint警告
+
+``` JS
+//cra更新之后默认ESlint不在浏览器里输出了,这里需要修改webpack的配置
+//使用customize-cra
+module.exports={
+  webpack:override(
+    ....
+  ),
+   devServer: overrideDevServer(config =>
+  {
+    // "none" | "error" | "warn" | "info" | "log" | "verbose"
+    config.client.logging = 'verbose';
+  }
+}
+```

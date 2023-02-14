@@ -1,4 +1,4 @@
-# 部署Next.js
+# Next.js部署
 
 1. 编译项目
 `npm run build | yarn build`

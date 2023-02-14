@@ -2,6 +2,8 @@
 
 ## exbuild.config.js
 
+`$ npm i -D esbuild@4 esbuild-plugin-eslint esbuild-sass-plugin`
+
 ``` javascript
 import { execSync } from 'child_process';
 import esbuild from 'esbuild';

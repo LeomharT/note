@@ -5,6 +5,7 @@ const nextConfig = {
     reactStrictMode: false,
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
+        //添加全局sass变量,也可以是文件路径
         additionalData: `$env:${process.env.NODE_ENV === 'production' ? "'/drone/'" : "'/'"};`
     },
     eslint: {
@@ -13,7 +14,9 @@ const nextConfig = {
     experimental: {
         esmExternals: true
     },
+    //资源文件前缀,静态资源保存在public文件夹下->next.js静态资源统一存在public文件夹下并用/根路径访问
     assetPrefix: process.env.NODE_ENV === 'production' ? '/drone' : undefined,
+    //getConfig()可以获得的全局变量
     publicRuntimeConfig: {
         basePath: process.env.NODE_ENV === 'production' ? '/drone' : '',
     },
