@@ -1,6 +1,12 @@
 # React事件绑定机制.md
 
-在获取canvas鼠标事件时没有找到`e.offsetX`,这个属性绑定到了`e.nativeEvent`所以学习一下`React`的DOM事件绑定机制.
+>在获取canvas鼠标事件时没有找到`e.offsetX`,这个属性绑定到了`e.nativeEvent`所以学习一下`React`的DOM事件绑定机制.
+
+## JavaSctipt原生事件机制
+
+1. 事件捕捉
+当某个元素触发某个事件是(如`onclick`),顶层对象`document`就会发送一个事件流,随着DOM树结构向着目标元素流去,
+
 
 React基于浏览器的事件机制自身实现了一套事件机制，包括:
 
