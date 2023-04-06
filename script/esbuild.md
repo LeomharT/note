@@ -14,6 +14,17 @@ import packageJson from './package.json' assert { type: "json" };
 
 console.time('\u001b[1;35mTotal time\u001b[1;36m');
 
+/** 
+ * entryPoints => 入口文件, 可以选择多个
+ * outdir      => 打包后的文件输出目录
+ * bundle      => 是否选择打包文件里的import
+ * minify      => 是否压缩代码
+ * watch       => 观察文件变化
+ * platform    => js运行环境
+ * assetNames  => 静态资源文件名
+ * loader      => 加载器
+ * plugins     => 插件
+ */
 await esbuild.build({
   entryPoints: ['./src/index.tsx'],
   outdir: 'dist',
