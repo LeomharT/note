@@ -1,5 +1,7 @@
 # React路由懒加载组件
 
+## 懒加载组件
+
 [链接1](https://juejin.cn/post/6844904191853494280)
 
 - 描述:
@@ -34,7 +36,8 @@ const Page4 = lazy(() => import("../page/Page4"));
 ```
 
 - esbuild.config.js
-使用esbuild打包时依旧会生成`index.js`,`index.html`依旧加载`index.js`每次动态加载过浏览器会缓存切割后的代码
+
+使用esbuild打包时依旧会生成`index.js`,`index.html`依旧加载`index.js`.每次动态加载过浏览器会缓存切割后的代码
 
 ```JS
 await esbuild.build({
@@ -43,3 +46,11 @@ await esbuild.build({
     splitting: true, //切割代码,目前只接受esm模块
 })
 ```
+
+## Suspense和fallback的闪屏问题
+
+- 描述:
+由于React的懒加载机制是组件动态import之前React渲染的是Suspense fallback属性提供的组件,无法像从当前界面跳转一般
+
+- 解决方案:
+全局保存上一个路由的地址,fallback渲染上一个路由地址的组件外加NProgress等加载组件
