@@ -21,4 +21,18 @@
 >
 >> Lombok, Spring Boot DevTools, Spring  Web,MyBatis Framework, MySQL Driver, Spring Configuration Processor
 >
-> 9. 运行调试 -> F5
+4. 在src/main/java/com/包名/controller/MainController
+
+``` JAVA
+@Controller
+public class MainController {
+
+    @GetMapping("/Main")
+    public String Main(Model model,int id){
+        return "Hello World"
+    }
+
+}
+```
+
+5. F5启动调试
