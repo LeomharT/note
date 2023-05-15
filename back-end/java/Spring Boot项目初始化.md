@@ -1,6 +1,10 @@
 # Spring Boot项目初始化
 
 1. 安装VSCode、Java、Maven
+
+> JDK要装8以上的版本否则编译VScode编译时会报错
+> 创建Spring项目是可以选择JDK8,但是系统环境装8以上
+
 2. 安装下列VSCode插件
 >
 > - Extension Pack for Java
@@ -19,7 +23,18 @@
 > 7. 选择JDK -> 1.8
 > 8. 选择开发依赖包
 >
->> Lombok, Spring Boot DevTools, Spring  Web,MyBatis Framework, MySQL Driver, Spring Configuration Processor
+>> Lombok,
+>>
+>>Spring Boot DevTools,
+>>
+>>Spring  Web,
+>>
+>>MyBatis Framework,
+>>
+>>MySQL Driver,
+>>
+>>Spring Configuration Processor
+>>
 >
 4. 在src/main/java/com/包名/controller/MainController
 
