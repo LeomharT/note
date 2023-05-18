@@ -82,3 +82,9 @@ def _jupyter_server_extension_paths():
 在前端插件的基础上添加handler.py
 
 使用`jupyter server extension enalbe 插件名`启动插件
+
+## 打包
+>
+> 首先注意安装jupyter_packaing
+
+`python3 setup.py bdist_wheel`
