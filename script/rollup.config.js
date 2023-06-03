@@ -1,6 +1,3 @@
-# rollup.js
-
-``` JS
 export default {
     plugins: [
         /** 解决node_modules依赖插件 */
@@ -20,4 +17,3 @@ export default {
         format: 'es'
     }
 }
-```

@@ -1,4 +1,4 @@
-# vscode虚拟环境下找不到Pythone包
+# VSCode not find python package
 
 Vscode默认是寻找全局的运行环境，当使用了python的虚拟环境后会找不到包，因为默认是去全局找的
 

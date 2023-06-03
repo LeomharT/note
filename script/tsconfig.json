@@ -24,6 +24,6 @@
     },
     "include": [
         "src",
-        "../../packages/modules.d.ts"
+        "modules.d.ts"
     ],
 }
