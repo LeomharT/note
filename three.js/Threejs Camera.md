@@ -1,13 +1,16 @@
 # Threejs Camera
 
 ## Camera lookAt has no effect. Always look at (0,0,0)
+
 If you have any controler(`OrbiControls`,`TrackballControls`...), set `controler.target.copy(new Vector3())` when you change `camera.lookAt()`.
 
-## Camera set view port 
+## Camera set view port
+
 实现一个渲染器同时渲染两个相机视角
-1. https://threejs.org/examples/?q=multiple#webgl_multiple_views
-2. https://www.youtube.com/watch?v=_TtVdWAc9Sc
-3. https://observablehq.com/@vicapow/threejs-example-of-multiple-camera-viewports
+
+1. <https://threejs.org/examples/?q=multiple#webgl_multiple_views>
+2. <https://www.youtube.com/watch?v=_TtVdWAc9Sc>
+3. <https://observablehq.com/@vicapow/threejs-example-of-multiple-camera-viewports>
 
 实现这个效果需要的主要Api
 
