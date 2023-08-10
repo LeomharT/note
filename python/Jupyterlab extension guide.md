@@ -87,6 +87,7 @@ def _jupyter_server_extension_paths():
 >
 > 首先注意安装jupyter_packaing
 
+1. 使用setup.py
 `python3 setup.py bdist_wheel`
 
 ``` Python
@@ -172,4 +173,12 @@ except ImportError as e:
 if __name__ == "__main__":
     setuptools.setup(**setup_args)
 
+```
+
+2. 使用`pyproject.tom`
+
+``` Shell
+pip install build 
+
+python -m build
 ```
