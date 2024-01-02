@@ -1,4 +1,4 @@
-# Docker删除无效镜像 删除所有容器
+# Docker delete useless image
 
 ## 1. 列出所有的容器 ID
 
