@@ -1,4 +1,4 @@
-# hover
+# hover supported
 
 ```css
 @media (hover: hover) {
