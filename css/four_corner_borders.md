@@ -4,6 +4,7 @@
 
 ```css
 .border_style{
+  /* 每个角X,Y各需要一个 */
   background: linear-gradient(#33cdfa, #33cdfa) left top,
   linear-gradient(#33cdfa, #33cdfa) left top,
   linear-gradient(#33cdfa, #33cdfa) right top,
